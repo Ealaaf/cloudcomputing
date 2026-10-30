@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Computing Mini App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="eyebrow">CSC 61004 • System Paradigms</p>
+      <h1>Cloud Computing Mini App</h1>
+      <p class="subtitle">
+        A simple interactive app covering IaaS, PaaS, SaaS, CapEx, OpEx and cloud scalability.
+      </p>
+    </section>
+
+    <section class="cards" aria-label="Cloud service models">
+      <article class="card">
+        <h2>IaaS</h2>
+        <p><strong>Infrastructure as a Service</strong></p>
+        <p>Provides virtual servers, storage and networking while the user manages more of the system.</p>
+      </article>
+
+      <article class="card">
+        <h2>PaaS</h2>
+        <p><strong>Platform as a Service</strong></p>
+        <p>Provides a managed platform where developers can build and deploy applications.</p>
+      </article>
+
+      <article class="card">
+        <h2>SaaS</h2>
+        <p><strong>Software as a Service</strong></p>
+        <p>Provides complete software applications over the internet.</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>CapEx vs OpEx</h2>
+      <div class="comparison">
+        <div>
+          <h3>CapEx</h3>
+          <p>Large upfront spending on servers, hardware and data-centre infrastructure.</p>
+        </div>
+        <div>
+          <h3>OpEx</h3>
+          <p>Ongoing cloud usage or subscription costs paid as services are consumed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel quiz">
+      <div class="quiz-top">
+        <div>
+          <p class="eyebrow">Quick Check</p>
+          <h2>Cloud Computing Quiz</h2>
+        </div>
+        <div class="score" id="score">Score: 0 / 3</div>
+      </div>
+
+      <form id="quizForm">
+        <fieldset>
+          <legend>1. Which cloud model gives users complete software over the internet?</legend>
+          <label><input type="radio" name="q1" value="iaas" /> IaaS</label>
+          <label><input type="radio" name="q1" value="paas" /> PaaS</label>
+          <label><input type="radio" name="q1" value="saas" /> SaaS</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Cloud computing usually shifts IT spending from:</legend>
+          <label><input type="radio" name="q2" value="opex-capex" /> OpEx to CapEx</label>
+          <label><input type="radio" name="q2" value="capex-opex" /> CapEx to OpEx</label>
+          <label><input type="radio" name="q2" value="none" /> Neither</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. What does scalability allow a cloud system to do?</legend>
+          <label><input type="radio" name="q3" value="fixed" /> Keep resources fixed</label>
+          <label><input type="radio" name="q3" value="scale" /> Increase or decrease resources when demand changes</label>
+          <label><input type="radio" name="q3" value="offline" /> Work without a network</label>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit">Check Answers</button>
+          <button type="button" class="secondary" id="resetBtn">Reset</button>
+        </div>
+      </form>
+
+      <p id="result" class="result" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Why Cloud?</h2>
+      <ul>
+        <li>Resources can scale up or down based on demand.</li>
+        <li>Organizations can reduce large upfront infrastructure costs.</li>
+        <li>Applications can be accessed over the internet from different locations.</li>
+        <li>Pay-as-you-go models can improve cost efficiency.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Simple cloud deployment demonstration for Tutorial 6.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
